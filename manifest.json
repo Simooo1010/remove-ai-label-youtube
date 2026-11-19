@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Remove AI Label for YouTube",
+  "version": "0.1.0",
+  "description": "Hides the AI label in the description of YouTube videos. On/off switch in the popup.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Remove AI Label for YouTube",
+    "default_popup": "src/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

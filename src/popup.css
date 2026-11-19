@@ -1,0 +1,5 @@
+:root { color-scheme: light dark; }
+body { width: 220px; margin: 0; padding: 14px; font: 14px system-ui, sans-serif; }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 12px; cursor: pointer; }
+.row input { width: 18px; height: 18px; }
+.hint { margin: 10px 0 0; font-size: 12px; opacity: .7; }

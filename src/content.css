@@ -1,0 +1,4 @@
+/* Elements marked by content.js are hidden only while the extension is on. */
+html[data-rail-enabled="true"] [data-rail-label] {
+  display: none !important;
+}
